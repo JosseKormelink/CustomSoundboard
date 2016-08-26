@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "710317792425",
+    "firebase_url": "https://customsoundboard-6a09d.firebaseio.com",
+    "project_id": "customsoundboard-6a09d",
+    "storage_bucket": "customsoundboard-6a09d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710317792425:android:e0215a06848da25d",
+        "android_client_info": {
+          "package_name": "org.kormelink.josse.customsoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710317792425-4uj4871rhpcg0t7alq80826oop389idi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgMTV9ApZHmnCCrqNAQ1gWeAPgow6vpXo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
