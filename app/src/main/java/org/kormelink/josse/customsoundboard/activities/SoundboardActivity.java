@@ -1,4 +1,4 @@
-package org.kormelink.josse.customsoundboard;
+package org.kormelink.josse.customsoundboard.activities;
 
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -21,6 +21,8 @@ import android.widget.TextView;
 
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+
+import org.kormelink.josse.customsoundboard.R;
 
 public class SoundboardActivity extends AppCompatActivity {
 
