@@ -2,4 +2,7 @@
     <string name="app_name">CustomSoundboard</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="choose_from_local_storage">Choose from local storage</string>
+    <string name="choose_from_service">Choose from the service</string>
+    <string name="title_activity_soundboard">SoundboardActivity</string>
 </resources>
