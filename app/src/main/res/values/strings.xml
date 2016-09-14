@@ -5,4 +5,9 @@
     <string name="choose_from_local_storage">Choose from local storage</string>
     <string name="choose_from_service">Choose from the service</string>
     <string name="title_activity_soundboard">SoundboardActivity</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="no_account_yet_create_one">No account yet? Create one</string>
+    <string name="custom_soundboard">Custom Soundboard</string>
 </resources>
