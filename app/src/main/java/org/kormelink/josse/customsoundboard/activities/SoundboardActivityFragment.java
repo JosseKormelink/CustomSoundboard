@@ -1,7 +1,6 @@
 package org.kormelink.josse.customsoundboard.activities;
 
 import android.content.Context;
-import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -35,6 +34,7 @@ public class SoundboardActivityFragment extends Fragment {
     GridView gridView;
 
     public SoundboardActivityFragment() {
+        //empty fragment constructor needed
     }
 
     @Override
@@ -57,6 +57,7 @@ public class SoundboardActivityFragment extends Fragment {
             gridView.setAdapter(new SoundBoardArrayAdapter(context, dao.queryForAll()));
         } catch (SQLException e) {
             e.printStackTrace();
+
         }
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -70,7 +71,6 @@ public class SoundboardActivityFragment extends Fragment {
                         mediaPlayer.reset();
                     }
 
-                    mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
                     mediaPlayer.setDataSource(localSound.getLocalFilepath());
                     mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
