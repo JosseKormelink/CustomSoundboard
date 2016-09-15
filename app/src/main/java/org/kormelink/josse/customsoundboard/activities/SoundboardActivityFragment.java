@@ -9,7 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
+import com.google.firebase.crash.FirebaseCrash;
 import com.j256.ormlite.dao.Dao;
 
 import org.kormelink.josse.customsoundboard.R;
@@ -57,7 +59,6 @@ public class SoundboardActivityFragment extends Fragment {
             gridView.setAdapter(new SoundBoardArrayAdapter(context, dao.queryForAll()));
         } catch (SQLException e) {
             e.printStackTrace();
-
         }
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -82,7 +83,8 @@ public class SoundboardActivityFragment extends Fragment {
                     mediaPlayer.prepare();
                     mediaPlayer.start();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    FirebaseCrash.report(e);
+                    Toast.makeText(getContext(), R.string.cant_find_sound, Toast.LENGTH_LONG).show();
                 }
             }
         });

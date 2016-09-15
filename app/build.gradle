@@ -46,6 +46,9 @@ dependencies {
     compile 'com.google.firebase:firebase-database:9.4.0'
     compile 'com.firebaseui:firebase-ui-database:0.4.0'
 
+    // for Firebase crash reporting
+    compile 'com.google.firebase:firebase-crash:9.4.0'
+
     //dependency for OrmLite
     compile 'com.j256.ormlite:ormlite-android:4.48'
 }
